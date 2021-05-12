@@ -2,6 +2,8 @@
 
 @section('title', 'home')
 
+{{-- contenuto all'interno del main --}}
+
 @section('content')
     <h1>la mia homepage</h1>
 
