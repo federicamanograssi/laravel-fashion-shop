@@ -4,5 +4,11 @@
 
 {{-- contenuto all'interno del main --}}
 @section('content')
-    sono la pagina prodotti
+    @foreach ($prodotti as $prodotto)
+        <h2>{{$prodotto['name']}}</h2>
+        <p>Colore : {{$prodotto['color']}}</p>
+        <p>Taglia : {{$prodotto['size']}}</p>
+        <p>Descrizione : {{$prodotto['description']}}</p>
+
+    @endforeach
 @endsection

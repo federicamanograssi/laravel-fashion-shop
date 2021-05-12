@@ -14,7 +14,6 @@ class MainController extends Controller
 
     public function prodotti(){
         $vestiti = Dress::all();
-        @dd($vestiti);
         $data = [
             'prodotti'=>$vestiti
         ];
