@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Dress;
 
 class MainController extends Controller
 {
@@ -12,6 +13,11 @@ class MainController extends Controller
     }
 
     public function prodotti(){
-        return view('prodotti');
+        $vestiti = Dress::all();
+        @dd($vestiti);
+        $data = [
+            'prodotti'=>$vestiti
+        ];
+        return view('prodotti',$data);
     }
 }
