@@ -1,0 +1,19 @@
+===Database shop
+
+== Table structure for table dresses
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|name|char(50)|No|
+|color|char(20)|No|
+|size|tinytext|Yes|NULL
+|description|tinytext|Yes|NULL
+== Dumping data for table dresses
+
+|1|Maglietta a maniche corte|nero|M|Maglietta a maniche corte femminile con stampa
+|2|Maglietta a maniche lunghe|rosso|L|Maglietta a maniche lunghe femminile con stampa
+|4|Vestito|blu|M|Abito da cerimonia lungo
+|5|Pantaloncino|blu chiaro|s|pantaloncino di jeans con vita elasticizzata
+|6|calzini Dobby|grigio|39-42|calzini con stampa 'Dobby è un elfo libero'
